@@ -1,0 +1,64 @@
+(1)localhost:9090/rest/search-by-id/1
+Http Method:GET
+
+Response:
+{
+    "id": 1,
+    "name": "Debadri Sarkar",
+    "designation": "SDE-1"
+}
+
+
+
+(2)localhost:9090/rest/create-employee
+Http Method:POST
+
+Request:
+{
+    "id": 3,
+    "name": "Sourav Saha",
+    "designation": "SDE-3"
+}
+
+Response:Successfully created
+
+(3)localhost:9090/rest/update-employee?id=1
+Http Method:PUT
+
+Request:
+{
+    "id": 1,
+    "name": "Debadri Janty Sarkar",
+    "designation": "SDE-1"
+}
+
+Response:Successfully updated
+
+(4)localhost:9090/rest/find-all-employee
+Http Method:GET
+
+Response:
+
+[
+    {
+        "id": 1,
+        "name": "Debadri Janty Sarkar",
+        "designation": "SDE-1"
+    },
+    {
+        "id": 2,
+        "name": "Janty Sarkar",
+        "designation": "SDE-2"
+    },
+    {
+        "id": 3,
+        "name": "Sourav Saha",
+        "designation": "SDE-3"
+    }
+]
+
+
+(5)localhost:9090/rest/delete-employee/3
+Http Method:DELETE
+
+Response:Successfully deleted
